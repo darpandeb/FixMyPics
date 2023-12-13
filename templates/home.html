@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Upload Form</title>
+  <style>
+    body {
+      background-image: url('./static/bg.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+
+
+    form {
+      width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      width: auto;
+      background: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Image Upload</h1>
+  <form method='POST' action='/process' enctype="multipart/form-data">
+    <input type='file' name='image'>
+    <input type='submit' value='Upload and Process'>
+  </form>
+</body>
+
+</html>

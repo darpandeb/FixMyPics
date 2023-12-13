@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #e0f1f1;
+
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px #aaa;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Best Filter Results</h1>
+
+  <p>
+    <b>Filter Name:</b> {{ best['name'] }}
+  </p>
+
+  <p>
+    <b>PSNR:</b> {{ best['psnr'] }}
+  </p>
+
+  <!-- Display the best image -->
+  <img src="{{ url_for('static', filename=best['name'] + '.jpg') }}">
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+Flask==2.2.3
+opencv-python==4.7.0.68
+matplotlib==3.6.3
+scikit-image==0.19.3
+gunicorn==20.1.0
+Werkzeug==2.2.3
